@@ -34,6 +34,13 @@ else
     echo "Java JDK já está instalado."
 fi
 
+# Python
+if ! is_installed python3; then
+    sudo apt install -y python3
+else
+    echo "Python já está instalado."
+fi
+
 # VS Code
 if ! is_installed code; then
     flatpak install -y flathub com.visualstudio.code
